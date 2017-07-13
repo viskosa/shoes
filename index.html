@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fooseshoes</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> <!-- чтобы браузер учитывал dpr устройства-->
+	<meta name="MobileOptimized" content="320"/> <!-- списала с фронтендер.ком.юа -->
+	<meta name="HandheldFriendly" content="true"/><!-- списала с фронтендер.ком.юа -->
+	<!--[if lt IE 9]>
+		<script src="">script/css3-mediaqueries.js</script>
+	<![endif]-->
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="css/ie.css">
+	<![endif]-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!--[if lt IE 9]>
+		<script src="">script/html5shiv.js</script> 
+	<![endif]-->
+	<script src="script/prefixfree.min.js"></script> <!-- префиксер -->
+	<script src="https://use.fontawesome.com/c0aa1a22f3.js"></script> <!-- glyphicons -->
+</head>
+<body>
+	
+<!-- HEADER START-->
+	<div class="container-fluid header">
+		<div class="container">
+			<div class="row no-gutter">
+
+				<div class="col-xs-12 col-md-2 logo">
+					<a href="">fooseshoes</a>
+				</div>
+
+
+				<div class="search col-xs-12 col-sm-6 col-md-2 col-md-offset-6">
+					<div class="input-group">
+     					<input type="text" class="form-control">
+      					<span class="input-group-btn">
+       						<button class="btn glyphicon glyphicon-search" type="submit"></button>
+     					</span>
+    				</div>
+				</div> 
+				<div class="login col-xs-12 col-sm-6 col-md-2">
+					<a href="#">login</a>
+					or
+					<a href="#">register</a>
+				</div>
+
+			</div> <!-- .row -->
+		</div>
+	</div>
+<!-- HEADER FINISH-->
+
+
+	<!-- MENU START -->
+	
+		<div class="container menu">
+			<nav class="navbar navbar-default col-xs-5 col-sm-9">
+
+				<div class="navbar-header">
+      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#coll-menu" aria-expanded="false">
+        				<span class="sr-only">Toggle navigation</span>
+        				<span class="icon-bar topString"></span>
+        				<span class="icon-bar middleString"></span>
+      					<span class="icon-bar bottomString"></span>
+      				</button>
+   				</div>
+
+   				<div class="collapse navbar-collapse" id="coll-menu">
+   				 	<ul class="nav navbar-nav">
+        				<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+        				<li><a href="#">Products</a></li>
+        				<li><a href="#">About</a></li>
+        				<li><a href="#">Pages</a></li>
+        				<li><a href="#">Blog</a></li>
+        				<li><a href="#">Contact</a></li>
+        			</ul>	
+   				</div>
+
+			</nav>
+
+			<div class="col-xs-7 col-sm-3 clearfix star-cart" role="group" aria-label="...">
+  				<button type="button" class="btn fa fa-star-o col-xs-offset-4 col-xs-4 star"><a href="#"><span class="badge">30</span></a></button>
+  				<button type="button" class="btn col-xs-4 cart"><a href="#"><span class="badge">0</span></a></button>
+			</div>
+		</div>
+	
+	<!-- MENU FINISH -->
+
+
+<!-- SLIDER START-->
+	<div class="container-fluid">
+		<div class="row">
+
+			<div id="carousel-generic" class="carousel slide hidden-xs" data-ride="carousel">
+				
+				  <ol class="carousel-indicators">
+  				  <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+  				  <li data-target="#carousel-generic" data-slide-to="1"></li>
+ 				    <li data-target="#carousel-generic" data-slide-to="2"></li>
+ 				    <li data-target="#carousel-generic" data-slide-to="3"></li>
+ 				    <li data-target="#carousel-generic" data-slide-to="4"></li>
+ 				  </ol>
+      
+				  <div class="carousel-inner" role="listbox">
+    				<div class="item active">
+      					<img src="images/girl.jpg" alt="Pink Shoes">
+      					<div class="carousel-caption container no-gutter">
+      						<div class="col-sm-6 col-sm-offset-4 col-md-offset-4 col-lg-offset-6 no-gutter pink-shoes">
+      							<div class="price">$ 145,99</div>
+      							<a href="#"><h2>Pink Shoes 2013 Collection</h2></a>
+      							<p>
+      								Nunc non fermentum nunc. Sed ut ante  eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget...
+      							</p>
+      							<div class="btn-group" role="group" aria-label="...">
+  									<button type="button" class="btn btn-default fa fa-eye"></button>
+  									<button type="button" class="btn btn-default fa fa-star-o"></button>
+  									<button type="button" class="btn btn-default fa fa-share-square-o"></button>
+  									<button type="button" class="btn btn-default cart"></button>
+								    </div>
+      						</div>
+      					</div>
+    				</div>
+
+    				<div class="item">
+      					<img src="images/leg-1.jpg" alt="Anna Field">
+      					<div class="carousel-caption container no-gutter">
+      						<div class="col-sm-6 col-sm-offset-4 col-md-offset-4 col-lg-offset-6 no-gutter anna-field">
+      							<div class="price">$ 199,99</div>
+      							<a href="#"><h2>Anna Field 2013 Collection</h2></a>
+      							<p>
+      								Nunc non fermentum nunc. Sed ut ante  eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget...
+      							</p>
+      							<div class="btn-group" role="group" aria-label="...">
+  									 <button type="button" class="btn btn-default fa fa-eye"></button>
+  									 <button type="button" class="btn btn-default fa fa-star-o"></button>
+  									 <button type="button" class="btn btn-default fa fa-share-square-o"></button>
+  									 <button type="button" class="btn btn-default cart"></button>
+								    </div>
+      					 </div>
+      					</div>
+    				</div> <!-- end of item -->
+
+    				<div class="item">
+      					<img src="images/leg-2.jpg" alt="Prada">
+      					<div class="carousel-caption container no-gutter">
+      						<div class="col-sm-6 col-sm-offset-3 col-md-offset-4 col-lg-offset-5 no-gutter prada">
+      							<div class="price">$ 285,99</div>
+      							<a href="#"><h2>Prada 2013 Collection</h2></a>
+      							<p>
+      								Nunc non fermentum nunc. Sed ut ante  eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget...
+      							</p>
+      							<div class="btn-group" role="group" aria-label="...">
+  									<button type="button" class="btn btn-default fa fa-eye"></button>
+  									<button type="button" class="btn btn-default fa fa-star-o"></button>
+  									<button type="button" class="btn btn-default fa fa-share-square-o"></button>
+  									<button type="button" class="btn btn-default cart"></button>
+								</div>
+      						</div>
+      					</div>
+    				</div> <!-- end of item -->
+
+    				<div class="item">
+      					<img src="images/leg-3.jpg" alt="Casadei">
+      					<div class="carousel-caption container no-gutter">
+      						<div class="col-sm-6 col-sm-offset-3 col-md-offset-4 col-lg-offset-5 no-gutter casadei">
+      							<div class="price">$ 200,00</div>
+      							<a href="#"><h2>Casadei 2013 Collection</h2></a>
+      							<p>
+      								Nunc non fermentum nunc. Sed ut ante  eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget...
+      							</p>
+      							<div class="btn-group" role="group" aria-label="...">
+  									<button type="button" class="btn btn-default fa fa-eye"></button>
+  									<button type="button" class="btn btn-default fa fa-star-o"></button>
+  									<button type="button" class="btn btn-default fa fa-share-square-o"></button>
+  									<button type="button" class="btn btn-default cart"></button>
+								</div>
+      						</div>
+      					</div>
+    				</div> <!-- end of item -->
+
+    				<div class="item">
+      					<img src="images/leg-4.jpg" alt="Mellow Yellow">
+      					<div class="carousel-caption container no-gutter">
+      						<div class="col-sm-6 col-sm-offset-4 col-md-offset-4 col-lg-offset-6 no-gutter mellow">
+      							<div class="price">$ 215,50</div>
+      							<a href="#"><h2>Mellow Yellow 2013 Collection</h2></a>
+      							<p>
+      								Nunc non fermentum nunc. Sed ut ante  eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget...
+      							</p>
+      							<div class="btn-group" role="group" aria-label="...">
+  									<button type="button" class="btn btn-default fa fa-eye"></button>
+  									<button type="button" class="btn btn-default fa fa-star-o"></button>
+  									<button type="button" class="btn btn-default fa fa-share-square-o"></button>
+  									<button type="button" class="btn btn-default cart"></button>
+								</div>
+      						</div>
+      					</div>
+    				</div> <!-- end of item -->
+    
+  				</div>
+			</div>
+		</div>
+
+	</div>
+<!-- SLIDER FINISH-->
+
+
+<!-- SWITCHER START -->
+	<div class="container-fluid switcher-parent hidden-xs">
+		<div class="row">
+      <div class="container no-gutter switcher">
+        <div class="col-xs-1-5"><h3>Pink Shoes</h3><p>Now af $145,99</p></div>
+        <div class="col-xs-1-5"><h3>Anna Field</h3><p>Limited Edition</p></div>
+        <div class="col-xs-1-5"><h3>Prada</h3><p>Summer is coming</p></div>
+        <div class="col-xs-1-5"><h3>Casadei</h3><p>All Colors avaiable</p></div>
+        <div class="col-xs-1-5"><h3>Mellow Yellow</h3><p>Free delivery</p></div>
+      </div>
+      
+    </div>
+		
+	</div>
+<!-- SWITCHER FINISH -->
+
+
+<!-- ON SALE START -->
+  <div class="container-fluid on-sale">
+    <div class="row">
+      <div class="container">
+	      <div class="row">
+
+          <div class="col-xs-12 col-md-6 col-lg-4 os-first">
+            <a href="images/on-sale.jpg" target="_blank" class="thumbnail">
+        	   <img src="images/on-sale.jpg" alt="on-sale">
+            </a>
+        	  <!-- <div class="hover-first">on sale</div> -->
+          </div> <!--end of os-first-->
+
+		     <div class="visible-xs-block clearfix"></div>  <!-- распорка -->
+
+          <div class="col-xs-12 col-md-6 col-lg-4 os-second">
+            <a href="images/special-offers.jpg" target="_blank" class="thumbnail">
+        	   <img src="images/special-offers.jpg" alt="special-offers">
+            </a>
+        	  <!-- <div class="hover-second">special offers</div> -->
+          </div> <!--end of os-second-->
+
+        <div class="visible-md-block clearfix"></div> <!-- распорка -->
+
+          <div class="col-xs-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-0 os-third">
+            <a href="images/must-have.jpg" target="_blank" class="thumbnail">
+       		   <img src="images/must-have.jpg" alt="must-have">
+            </a>
+       		  <!-- <div class="hover-third">must have</div> -->
+          </div> <!--end of os-third-->  
+
+	      </div> <!--end of row -->
+
+      </div> <!--end of container-->
+    </div> <!--end of row-->
+  </div> <!--end of container-fluid-->
+<!-- ON SALE FINISH -->
+
+
+<!-- PRODUCTS START -->
+	<div class="container-fluid products">
+		<div class="row">
+      		<div class="container">
+	  			<div class="row products-wrap1">
+
+  <!-- new arrivals -->
+
+            <div class="col-xs-12 new-arrivals-wrap">
+              <div class="col-xs-6 new-arrivals">
+                <h3 class="pull-left">New arrivals on FooseShoes</h3>
+              </div>
+              <div class="col-xs-6">
+                <a href="#" class="pull-right show-all">Show all</a>
+              </div>
+            </div> <!--end of new-arrivals-wrap-->
+
+          
+       			<div class="col-xs-12 col-md-6 col-lg-4 thumbnail pr na-first">
+        			<img src="images/na-1.jpg" alt="even&odd">
+
+              <div class="name">
+
+                <div class="cube">
+                  <div class="gr-1"><p>Even &#38; odd</p></div>
+                  <div class="gr-2"></div>
+                  <div class="gr-3"></div>
+                  <div class="gr-4"></div>
+                  <div class="gr-5"></div>
+                  <div class="gr-6">
+                    <div class="btn-group name-buttons" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default fa fa-eye"></button>
+                      <button type="button" class="btn btn-default fa fa-star-o"></button>
+                      <button type="button" class="btn btn-default fa fa-share-square-o"></button>
+                      <button type="button" class="btn btn-default cart"></button>
+                    </div>
+                  </div>
+                </div> <!--end of cube -->
+
+              </div> <!-- end of name -->
+
+        		</div> <!--end of na-first-->
+
+					  <div class="visible-xs-block clearfix"></div> <!-- распорка -->
+
+       			<div class="col-xs-12 col-md-6 col-lg-4 thumbnail pr os na-second">
+        			<img src="images/na-2.jpg" alt="seven&odd">
+
+              <div class="name">
+
+                <div class="cube">
+                  <div class="gr-1"><p>Even &#38; odd</p></div>
+                  <div class="gr-2"></div>
+                  <div class="gr-3"></div>
+                  <div class="gr-4"></div>
+                  <div class="gr-5"></div>
+                  <div class="gr-6">
+                    <div class="btn-group name-buttons" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default fa fa-eye"></button>
+                      <button type="button" class="btn btn-default fa fa-star-o"></button>
+                      <button type="button" class="btn btn-default fa fa-share-square-o"></button>
+                      <button type="button" class="btn btn-default cart"></button>
+                    </div>
+                  </div>
+                </div> <!--end of cube -->
+
+              </div> <!-- end of name -->
+
+       			</div> <!--end of na-second-->
+
+        		<div class="visible-md-block clearfix"></div> <!-- распорка -->
+
+        		<div class="col-xs-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-0 thumbnail pr na-third">
+       				<img src="images/na-3.jpg" alt="buffalo decollete">
+
+              <div class="name">
+
+                <div class="cube">
+                  <div class="gr-1"><p>Buffalo Decollete</p></div>
+                  <div class="gr-2"></div>
+                  <div class="gr-3"></div>
+                  <div class="gr-4"></div>
+                  <div class="gr-5"></div>
+                  <div class="gr-6">
+                    <div class="btn-group name-buttons" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default fa fa-eye"></button>
+                      <button type="button" class="btn btn-default fa fa-star-o"></button>
+                      <button type="button" class="btn btn-default fa fa-share-square-o"></button>
+                      <button type="button" class="btn btn-default cart"></button>
+                    </div>
+                  </div>
+                </div> <!--end of cube -->
+
+              </div> <!-- end of name -->
+
+       			</div>  <!--end of na-third-->
+        
+	  			</div> <!--end of row--> 
+
+  <!-- best sellers -->
+
+	  			<div class="row products-wrap2">
+
+              <div class="col-xs-12 best-sellers-wrap">
+                <div class="col-xs-6 pull-left best-sellers">
+                  <h3>Best sellers of the months</h3>
+                </div>
+                <div class="col-xs-6">
+                  <a href="#" class="pull-right show-all">Show all</a>
+                </div>
+              </div> <!--end of best-sellers-wrap-->
+
+
+
+       				<div class="col-xs-12 col-md-6 col-lg-4 thumbnail pr bs-first">
+        				<img src="images/bs-1.jpg" alt="even&odd">
+
+                <div class="name">
+
+                  <div class="cube">
+                    <div class="gr-1"><p>Even &#38; odd</p></div>
+                    <div class="gr-2"></div>
+                    <div class="gr-3"></div>
+                    <div class="gr-4"></div>
+                    <div class="gr-5"></div>
+                    <div class="gr-6">
+                      <div class="btn-group name-buttons" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default fa fa-eye"></button>
+                        <button type="button" class="btn btn-default fa fa-star-o"></button>
+                        <button type="button" class="btn btn-default fa fa-share-square-o"></button>
+                        <button type="button" class="btn btn-default cart"></button>
+                      </div>
+                    </div>
+
+                  </div> <!--end of cube -->
+                </div> <!-- end of name -->
+
+        			</div> <!--end of bs-first-->
+
+
+					    <div class="visible-xs-block clearfix"></div> <!-- распорка -->
+
+
+       				<div class="col-xs-12 col-md-6 col-lg-4 thumbnail pr bs-second">
+        				<img src="images/bs-2.jpg" alt="even&odd">
+
+                <div class="name">
+
+                  <div class="cube">
+                    <div class="gr-1"><p>Even &#38; odd</p></div>
+                    <div class="gr-2"></div>
+                    <div class="gr-3"></div>
+                    <div class="gr-4"></div>
+                    <div class="gr-5"></div>
+                    <div class="gr-6">
+                      <div class="btn-group name-buttons" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default fa fa-eye"></button>
+                        <button type="button" class="btn btn-default fa fa-star-o"></button>
+                        <button type="button" class="btn btn-default fa fa-share-square-o"></button>
+                        <button type="button" class="btn btn-default cart"></button>
+                      </div>
+                    </div>
+
+                  </div> <!--end of cube -->
+                </div> <!-- end of name -->
+
+       				 </div> <!--end of bs-second-->
+
+        			<div class="visible-md-block clearfix"></div> <!-- распорка -->
+
+        			<div class="col-xs-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-0 thumbnail pr out bs-third">
+       					<img src="images/bs-3.jpg" alt="buffalo decollete">
+
+                <div class="name">
+
+                  <div class="cube">
+                    <div class="gr-1"><p>Buffalo Decollete</p></div>
+                    <div class="gr-2"></div>
+                    <div class="gr-3"></div>
+                    <div class="gr-4"></div>
+                    <div class="gr-5"></div>
+                    <div class="gr-6">
+                      <div class="btn-group name-buttons" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default fa fa-eye"></button>
+                        <button type="button" class="btn btn-default fa fa-star-o"></button>
+                        <button type="button" class="btn btn-default fa fa-share-square-o"></button>
+                        <button type="button" class="btn btn-default cart"></button>
+                      </div>
+                    </div>
+
+                  </div> <!--end of cube -->
+                </div> <!-- end of name -->
+
+       				</div> <!--end of bs-third-->
+
+	  			</div> <!--end of row-->
+
+     		</div> <!--end of container-->
+    
+   		</div> <!--end of row-->
+	</div> <!--end of container-fluid-->
+
+<!-- PRODUCTS FINISH -->
+
+
+<!-- BLOG START -->
+  <div class="container-fluid blog">
+    <div class="row">
+      <div class="container blog-wrap">
+        <div class="row"> <!-- нивелирует паддинги контейнера -->
+        
+          <div class="col-xs-12 col-md-6 col-lg-3 free-ship">
+
+            <div class="thumbnail">
+              <h3>free shipping</h3>
+              <p>Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem,</p>
+            </div> <!--end of thumbnail-->
+          </div> <!--end of free-ship-->
+      
+          <div class="col-xs-12 col-md-6 col-lg-3 testimonials">
+            <div class="thumbnail">
+              <h3>testimonials</h3>
+              <p>vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, vehicula id dictum sit [...]</p>
+              <span>- John Doe -</span>
+            </div> <!--end of thumbnail-->
+          </div> <!--end of testimonials-->
+          
+          <div class="col-xs-12 col-lg-6 news">
+            <div class="thumbnail">
+
+              <h3>blog news</h3>
+
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                  <div class="col-xs-3 date">apr 01</div>
+                  </a>
+                </div>
+
+                <div class="media-body">
+                  <h4 class="media-heading">Nice &#38; clean. The best for you blog!</h4>
+                  <p>Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel</p>
+                </div>
+              </div> <!--end of media-->
+
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <div class="col-xs-3 date">apr 01</div>
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">What an Ecommerce theme!</h4>
+                  <p>Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel</p>
+                </div>
+              </div> <!--end of media-->
+            </div> <!--end of thumbnail-->
+
+          </div> <!--end of free-ship-->
+       
+        </div><!--end of row-->
+      </div> <!--end of container-->
+    </div> <!--end of row-->
+  </div> <!--end of container-fluid-->
+<!-- BLOG FINISH -->
+
+
+<!-- WIDGETS START -->
+  <div class="container-fluid widget-wrap">
+    <div class="row">
+      <div class="container widget">
+
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div class="thumbnail">
+            <h3>text widget</h3>
+            <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+          </div> <!--end of thumbnail-->
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div class="thumbnail">
+            <h3>twitter widget</h3>
+            <p><span>@ericafustero</span> Why thank you. Your work looks awesome by the way!<span> @treemelody</span></p>
+            <p class="days-ago">9 days ago</p>
+
+            <p><span>@roymarvelous </span>You can seek a refund through TF if it is not as advertised - but it is :)</p>
+            <p class="days-ago">21 days ago</p>
+ 
+          </div> <!--end of thumbnail-->
+        </div>
+
+        <div class="visible-md-block clearfix"></div> <!--распорка -->
+
+        <div class="col-xs-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-0 flickr">
+          <div class="thumbnail">
+            <h3>blog news</h3>
+            <img src="images/widget.png" alt="widget flickr" class="image-responsive">
+          </div> <!--end of thumbnail-->
+        </div>
+      </div> <!--end of container-->
+    </div> <!--end of row-->
+  </div> <!--end of container-fluid-->
+
+<!-- WIDGETS FINISH -->
+
+
+<!-- SOCIAL START -->
+  <div class="container-fluid social-wrap">
+    <div class="row">
+      <div class="container">
+        
+        <div class="col-xs-12 col-md-6 subscribe">
+          <div class="col-xs-12 col-md-8 col-lg-6 input-group">
+            <input type="email" class="form-control" placeholder="Enter email for newsletter">
+            <span class="input-group-btn">
+              <button class="btn btn-default glyphicon glyphicon-chevron-right" type="button"></button>
+            </span>
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+
+        <div class="col-xs-12 col-md-6 soc-icons">
+          <div class="col-xs-12">
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div> <!--end of container-->
+    </div> <!--end of row-->
+  </div> <!--end of container-fluid-->
+<!-- SOCIAL FINISH -->
+
+
+<!-- COPYRIGHT START -->
+  <div class="container-fluid copy-wrap">
+    <div class="row">
+     <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-md-push-6 links">
+            <ul>
+              <li><a href="">Home </a>/</li>
+              <li><a href="">Support </a>/</li>
+              <li><a href="">Terms and Conditions </a>/</li>
+              <li><a href="">Faqs </a>/</li>
+              <li><a href="">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-md-6 col-md-pull-6 copy">
+            <p>Copyright &#169; Fooseshoes 2013.</p>
+            <p>Designed by EnzoLiVolti</p>
+          </div>
+          
+        </div> <!--end of row-->
+     </div> <!--end of container--> 
+    </div> <!--end of row-->
+  </div> <!--end of container-fluid-->
+<!-- COPYRIGHT FINISH -->
+
+
+<!-- заглушка для IE -->
+	<div class="ie">
+		К сожалению, Ваш браузер больше не поддерживается. Пожалуйста, установите современную версию браузера.
+
+		На жаль, Ваш браузер більше не підтримується. Будь ласка, встановіть сучасну версію браузера.
+
+		Unfortunately your browser is not supported. Please install modern version of browser.
+	</div>
+<!-- заглушка для IE -->
+</body>
+</html>
+
